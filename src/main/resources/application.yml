@@ -1,0 +1,32 @@
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    password: ''
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mrsnow_generator?serverTimezone=UTC&nullCatalogMeansCurrent=true
+    username: root
+    password: 12345678
+
+
+mybatis-plus:
+  configuration:
+    #自动驼峰命名
+    map-underscore-to-camel-case: false
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  config: classpath:log4j2.xml
+  level:
+    root: info
+
+
+server:
+  servlet:
+    context-path: /mrsnow
+  port: 2777
+  undertow:
+    accesslog:
+      enabled: true
+      dir: /Users/dongzhen/IdeaProjects/snowLogs
