@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.mrsnow"})
 @MapperScan("com.mrsnow.web.mapper*")
 @EnableTransactionManagement
 @Slf4j

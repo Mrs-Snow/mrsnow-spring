@@ -37,17 +37,14 @@ public class R<T> {
         return new R<E>(SUCCESS_CODE,data,message);
     }
 
-    public static R success(String message){
-        return new R(SUCCESS_CODE,message);
-    }
-
     public static <E> R<E> success(E data){
-        R<E> r = new R<>(data);
+        R r = new R();
+        r.setData(data);
         r.setCode(SUCCESS_CODE);
         return r;
     }
 
-    public static  R success(){
+    public static R success(){
         R r = new R();
         r.setCode(SUCCESS_CODE);
         return r;

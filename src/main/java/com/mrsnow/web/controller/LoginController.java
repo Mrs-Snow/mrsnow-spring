@@ -1,4 +1,4 @@
-package com.web.controller;
+package com.mrsnow.web.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

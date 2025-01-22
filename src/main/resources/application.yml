@@ -30,3 +30,9 @@ server:
     accesslog:
       enabled: true
       dir: /Users/dongzhen/IdeaProjects/snowLogs
+
+mrsnow:
+  auth:
+    mode: 1 # 0-白名单模式 1-黑名单模式
+    whitelist: /login,/test
+    blacklist:
